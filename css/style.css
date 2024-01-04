@@ -446,7 +446,7 @@ body.locked {
           align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 100px;
+  margin-top: 20px;
   height: auto;
   width: 100%;
   text-align: center;
@@ -464,7 +464,7 @@ body.locked {
 }
 
 .section__more-content {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .section__more-content .items-container {
@@ -496,9 +496,9 @@ body.locked {
 
 .section__more-content .items-container .item .icon-container img {
   width: 100%;
-  max-width: 130px;
+  max-width: 40px;
   height: 100%;
-  min-height: 130px;
+  min-height: 40px;
 }
 
 .section__more-content .items-container .item .item-label {
@@ -514,12 +514,12 @@ body.locked {
   color: #FFF;
   text-align: center;
   font-family: Khand;
-  font-size: 41px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .section__stores {
@@ -711,6 +711,7 @@ body.locked {
 }
 
 .section__stores .swiper-container .pagi .pagination-container .pagination-dots {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2207,7 +2208,7 @@ button.swiper-pagination-bullet {
   }
 
   .section__more-title {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 0px;
   }
 
@@ -2216,7 +2217,7 @@ button.swiper-pagination-bullet {
   }
 
   .section__more-content {
-    margin-top: 160px;
+    margin-top: 20px;
   }
 
   .section__more-content .items-container .item .icon-container img {
@@ -2226,7 +2227,7 @@ button.swiper-pagination-bullet {
 
   .section__more-content .items-container .item .item-label {
     max-width: 200px;
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .section__stores-head .back a img {
@@ -2561,6 +2562,10 @@ button.swiper-pagination-bullet {
   .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .links a img {
     width: 8px;
     height: 8px;
+  }
+
+  .section__stores .swiper-container .pagi .pagination-container .pagination-dots {
+    margin-top: 0;
   }
 
   .section__stores .swiper-container .page-button-prev,
