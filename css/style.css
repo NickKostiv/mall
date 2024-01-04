@@ -112,7 +112,6 @@ body.locked {
 .section__explore {
   background-image: url("../img/background1.png");
   background-size: 100vw 100vh;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,12 +132,12 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__explore .content__explore .search-container {
@@ -403,8 +402,8 @@ body.locked {
 
 .section__more-head .back {
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 1%;
+  top: 1%;
 }
 
 .section__more-head .back a img {
@@ -418,7 +417,10 @@ body.locked {
   top: 0%;
   left: 50%;
   background-color: #92003B;
-  padding: 20px 90px;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 240px;
+  height: 100px;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
 }
@@ -478,10 +480,7 @@ body.locked {
 }
 
 .section__more-content .items-container .item {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   text-align: center;
-  margin: 10px;
   margin-top: 20px;
 }
 
@@ -514,12 +513,25 @@ body.locked {
   color: #FFF;
   text-align: center;
   font-family: Khand;
-  font-size: 18px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
   margin-top: 5px;
+}
+
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section__stores {
@@ -550,8 +562,8 @@ body.locked {
 
 .section__stores-head .back {
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 1%;
+  top: 1%;
 }
 
 .section__stores-head .back a img {
@@ -565,7 +577,10 @@ body.locked {
   top: 0%;
   left: 50%;
   background-color: #92003B;
-  padding: 20px 90px;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 240px;
+  height: 100px;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
 }
@@ -611,7 +626,7 @@ body.locked {
   border: 5px solid #4278AC;
   width: 100%;
   max-width: 500px;
-  border-radius: 50px;
+  border-radius: 30px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -619,8 +634,7 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 5px solid #4278AC;
-  border-radius: 50px;
+  border: 3px solid #4278AC;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
@@ -628,7 +642,7 @@ body.locked {
 
 .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .image-container img {
   width: 100%;
-  border: 5px solid #4278AC;
+  border: 3px solid #4278AC;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   height: auto;
@@ -742,22 +756,15 @@ body.locked {
 
 .section__stores .swiper-container .page-button-prev {
   position: absolute;
-  /* або relative, залежно від контексту */
   left: 20%;
-  /* або будь-яке інше значення для позиціонування */
 }
 
 .section__stores .swiper-container .page-button-next {
   position: absolute;
-  /* або relative, залежно від контексту */
   right: 20%;
-  /* або будь-яке інше значення для позиціонування */
 }
 
 .section__mall {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,8 +773,6 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  position: relative;
 }
 
 .section__mall-head {
@@ -929,12 +934,12 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .section__mall .action-section .map-section img {
   width: 100vw;
-  height: 80vh;
+  height: 100%;
 }
 
 .section__floor {
@@ -971,8 +976,8 @@ body.locked {
 
 .section__floor-head .back-bordered {
   position: absolute;
-  left: 2%;
-  top: 2%;
+  left: 1%;
+  top: 1%;
 }
 
 .section__floor-head .back-bordered a img {
@@ -1045,7 +1050,7 @@ body.locked {
 .section__zoom {
   position: relative;
   z-index: 999;
-  margin-top: -20px;
+  margin-top: -60px;
 }
 
 .section__zoom .zoom-items {
@@ -1185,8 +1190,8 @@ body.locked {
 
 .section__navigation-head .back {
   position: absolute;
-  left: 0%;
-  top: 0%;
+  left: 1%;
+  top: 1%;
 }
 
 .section__navigation-head .back a img {
@@ -1235,12 +1240,14 @@ body.locked {
   position: absolute;
   bottom: 0;
   left: 50%;
-  padding: 40px 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #FFF;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-top: -160px;
@@ -1311,6 +1318,7 @@ body.locked {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-wrap: nowrap;
 }
 
 .section__navigation .nav-info .card .start-navigation-btn .icon {
@@ -2262,7 +2270,7 @@ button.swiper-pagination-bullet {
 
   .section__mall .action-section .map-section img {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
 
   .section__floor-head {
@@ -2277,6 +2285,10 @@ button.swiper-pagination-bullet {
   .section__floor .levels .levels-col .levels-col-item {
     font-size: 24px;
     padding: 20px 24px;
+  }
+
+  .section__zoom {
+    margin-top: -30px;
   }
 
   .section__zoom .zoom-in img,
@@ -2401,6 +2413,11 @@ button.swiper-pagination-bullet {
   .section__more {
     background-size: cover;
     padding: 0 20px 40px 20px;
+    height: 100vh;
+  }
+
+  .content-area {
+    height: calc(100vh - 250px);
   }
 
   .section__floor .levels .levels-title {
@@ -2423,6 +2440,9 @@ button.swiper-pagination-bullet {
 
   .section__navigation .nav-info .card .start-navigation-btn {
     font-size: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 999;
   }
 }
 
@@ -2464,6 +2484,12 @@ button.swiper-pagination-bullet {
     padding: 10px 15px;
   }
 
+  .section__explore .content__explore .navigation-menu {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
   .section__explore .content__explore .navigation-menu .menu-list {
     gap: 26px;
   }
@@ -2484,7 +2510,9 @@ button.swiper-pagination-bullet {
   }
 
   .section__more-head .head-name {
-    padding: 10px 40px;
+    padding: 10px 15px;
+    height: 50px;
+    max-width: 100px;
   }
 
   .section__more-head .head-name p {
@@ -2507,17 +2535,31 @@ button.swiper-pagination-bullet {
     margin-top: 20px;
   }
 
+  .section__more-content .items-container {
+    margin-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .section__more-content .items-container .item {
+    margin-top: 2px;
+  }
+
   .section__more-content .items-container .item .icon-container img {
-    max-width: 30px;
-    min-height: 30px;
+    max-width: 60px;
+    min-height: 60px;
   }
 
   .section__more-content .items-container .item .item-label {
     font-size: 11px;
   }
 
+  .content-area {
+    height: calc(100vh - 180px);
+  }
+
   .section__stores {
     padding-bottom: 20px;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   .section__stores-head .back a img {
@@ -2526,7 +2568,9 @@ button.swiper-pagination-bullet {
   }
 
   .section__stores-head .head-name {
-    padding: 10px 40px;
+    padding: 10px 15px;
+    height: 50px;
+    max-width: 120px;
   }
 
   .section__stores-head .head-name p {
@@ -2542,6 +2586,11 @@ button.swiper-pagination-bullet {
     max-width: 138px;
   }
 
+  .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .image-container img {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
   .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .text-container {
     margin-top: 15px;
   }
@@ -2552,6 +2601,7 @@ button.swiper-pagination-bullet {
 
   .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .links {
     margin-top: 9px;
+    gap: 2px;
   }
 
   .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .links a {
@@ -2560,8 +2610,9 @@ button.swiper-pagination-bullet {
   }
 
   .section__stores .swiper-container .swiper-wrapper .swiper-slide .item .links a img {
-    width: 8px;
-    height: 8px;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
   }
 
   .section__stores .swiper-container .pagi .pagination-container .pagination-dots {
@@ -2589,7 +2640,7 @@ button.swiper-pagination-bullet {
   }
 
   .section__mall .action-section .action-wrapper {
-    margin-bottom: -180px;
+    margin-bottom: -20px;
     padding: 0 20px 34px 20px;
   }
 
@@ -2633,6 +2684,10 @@ button.swiper-pagination-bullet {
     font-size: 22px;
   }
 
+  .section__zoom {
+    margin-top: -25px;
+  }
+
   .section__zoom .zoom-in img,
   .section__zoom .zoom-out img {
     width: 19px;
@@ -2668,7 +2723,8 @@ button.swiper-pagination-bullet {
 
   .section__navigation .nav-info .card {
     margin-top: -30px;
-    padding: 36px 25px 19px 25px;
+    padding-top: 36px;
+    padding-bottom: 19px;
   }
 
   .section__navigation .nav-info .card .card-content h1 {
@@ -2711,5 +2767,11 @@ button.swiper-pagination-bullet {
   .section__more-content .items-container .item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+  }
+}
+
+@media (max-width: 380px) {
+  .section__more-content .items-container {
+    margin-top: 0;
   }
 }
